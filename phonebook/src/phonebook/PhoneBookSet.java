@@ -2,18 +2,25 @@ package phonebook;
 
 public class PhoneBookSet {
 	
+	private String serialNumber;
 	private String name;
 	private String phoneNumber;
 	private String eMail;
 	
 	// constructor
-    public PhoneBookSet(String a, String b, String c) {
+    public PhoneBookSet(String d, String a, String b, String c) {
+    	
+    	serialNumber = d;
         name = a;
         phoneNumber = b;
         eMail = c;
         }
 
     // getters
+    public String getSerialNumber() {
+        return serialNumber;
+        }
+    
     public String getName() {
         return name;
         }
@@ -27,6 +34,11 @@ public class PhoneBookSet {
         }
 
     // setters
+    
+    public void setSerialNumber(String d) {
+    	serialNumber = d;
+        }
+    
     public void setName(String a) {
         name = a;
         }
